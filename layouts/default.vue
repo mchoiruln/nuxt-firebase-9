@@ -52,4 +52,18 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.button--red {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #803b3b;
+  color: #803b3b;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--red:hover {
+  color: #fff;
+  background-color: #803b3b;
+}
 </style>

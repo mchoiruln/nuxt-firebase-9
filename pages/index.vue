@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">nuxt-firebase</h1>
+      <h1 class="title">Nuxt Firebase v9</h1>
       <div class="links">
         <button class="button--green shadow" @click="register">Register</button>
         <button class="button--green shadow" @click="login">Login</button>
@@ -15,6 +15,9 @@
         </button>
         <button class="button--green shadow" @click="sendMailVerification">
           Verify Email
+        </button>
+        <button class="button--red shadow" @click="deleteUser">
+          Delete User
         </button>
       </div>
       <div class="align-left">
@@ -111,6 +114,19 @@ export default {
       try {
         this.clearResponse()
         const response = await this.$fire.sendEmailVerification(
+          this.$fire.auth.currentUser
+        )
+        // this.response = response
+        console.log({ response })
+        this.getUser() // TODO: how update this status verified
+      } catch (error) {
+        this.response = { errorCode: error.code, errorMessage: error.message }
+      }
+    },
+    async deleteUser() {
+      try {
+        this.clearResponse()
+        const response = await this.$fire.deleteUser(
           this.$fire.auth.currentUser
         )
         // this.response = response

@@ -7,6 +7,7 @@ import {
   setPersistence,
   browserSessionPersistence,
   sendEmailVerification,
+  deleteUser,
 } from 'firebase/auth'
 
 // Initialize Firebase
@@ -45,5 +46,6 @@ export default (
     setPersistence,
     browserSessionPersistence,
     sendEmailVerification,
+    deleteUser,
   })
 }
