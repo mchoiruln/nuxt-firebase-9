@@ -1,5 +1,22 @@
 # nuxt-firebase
 
+## Command
+
+1. Register  
+   Registering a dummy user
+2. Login  
+   Login a dummy user, must be register first
+3. Logout  
+   Logout a dummy user
+4. Current User  
+   Display current user if register and login success
+5. Clear Screen  
+   Just clean up output response
+6. Verify Email  
+   Send verification email of current user
+7. Delete User  
+   Delete current user from firebase auth
+
 ## Configuration
 
 add .env to your configuration, and fill information from your console firebase auth
