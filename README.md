@@ -1,5 +1,19 @@
 # nuxt-firebase
 
+## Configuration
+
+add .env to your configuration, and fill information from your console firebase auth
+
+```env
+apiKey=xxx
+authDomain=xxx
+projectId=xxx
+storageBucket=xxx
+messagingSenderId=xxx
+ppId=xxx
+measurementId=xxx
+```
+
 ## Build Setup
 
 ```bash
