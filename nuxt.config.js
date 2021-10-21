@@ -56,22 +56,4 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  // firebase configuration
-  firebase: {
-    config: {
-      apiKey: 'AIzaSyDAvSpuwTj_z0zijK1QWgalHMs8YLEzk7U',
-      authDomain: 'fir-auth-a75a9.firebaseapp.com',
-      projectId: 'fir-auth-a75a9',
-      storageBucket: 'fir-auth-a75a9.appspot.com',
-      messagingSenderId: '814155388662',
-      appId: '1:814155388662:web:7237917848d6ae10b9fed7',
-      measurementId: 'G-EH5HRHXL97',
-    },
-    services: {
-      auth: {
-        ssr: false,
-        persistence: 'local',
-      },
-    },
-  },
 }
